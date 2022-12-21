@@ -1,0 +1,20 @@
+.blue-box a {
+    color: blue;
+}
+.bio-box{
+    background-color: lightgray;
+    border: 1px solid black;
+}
+.bio-box a {
+    color: red;
+    
+}
+.bio-box.box-one {
+    background-color: blueviolet;
+}
+#last-div {
+    background-color: orange;
+}
+.bio-box.box-two {
+    background-color: azure;
+}
