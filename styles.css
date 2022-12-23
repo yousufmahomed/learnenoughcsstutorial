@@ -1,22 +1,48 @@
  /* GLOBAL STYLES */
  
+ /* GLOBAL STYLES */
+ html, body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 7vw;
+  margin-top: 0;
+}
+
  a {
-    color: rgba(203, 195, 227, 0.2);
-  }
-  div {
-    border: 1px solid #0f0;
-  }
+  color: #f00;
+}
 
-  /* SOCIAL STYLES */
-  .social-link {
-    background: rgba(150, 150, 150, 0.2);
-    color: rgba(0, 0, 255, 0.2);
-  }
+/* HERO STYLES */
+.full-hero {
+  background-color: #c7dbfc;
+  height: 50vh;
+  width: 50vw;
+}
 
-  /* BIO STYLES */
-  div.bio-box {
-    border: 1px solid #fff;
-  }
-  .bio-copy a {
-    color: #0f0;
-  }
+/* SOCIAL STYLES */
+.social-link {
+  background: rgba(150, 150, 150, 0.5);
+  color: blue;
+}
+
+/* BIO STYLES */
+.bio-wrapper {
+  font-size: 24px;
+}
+.bio-box {
+  border: 1px solid black;
+  font-size: 1rem;
+  width: 50%;
+}
+.bio-box h3 {
+  font-size: 1.5em;
+}
+.bio-copy {
+  font-size: 1em;
+}
+.bio-copy a {
+  color: green;
+}
