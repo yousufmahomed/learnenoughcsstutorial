@@ -242,13 +242,13 @@ h4 {
   color: #333;
 }
 /* HIDE IN THE FOOTER */
-.footer .dropdown:hover .drop-menu,
+/* .footer .dropdown:hover .drop-menu,
 .footer .drop-trigger:after {
   display: none;
 }
 .footer .drop-trigger {
   padding-right: 0;
-}
+} */
 
 /* FOOTER STYLES */
 .footer {
@@ -267,13 +267,48 @@ h4 {
 .footer h3 span {
   color: #aaa;
 }
-.footer-nav li {
+.footer-nav > li {
   display: inline-block;
   margin: 2em 1em 0;
 }
 .footer-nav a {
   color: #ccc;
 }
+
+/* FOOTER-SPECIFIC DROPDOWN STYLES */
+.footer .drop-trigger:after {
+  /* center the arrow horizonally with the text around it */
+  top: 0em;
+  /* reverse the direction of the arrow */
+  border-color: transparent transparent #fff;
+}
+.footer .dropdown:hover .drop-trigger:after {
+  /* reverse the direction of the arrow on hover */
+  border-color: transparent transparent #ed6e2f;
+}
+.footer .drop-menu {
+  /* temporarily add a background to make sure
+  hitboxes are flush */
+  /*background: red;*/
+  /* add padding on the bottom, as opposed to the top */
+  padding: 0 0 1em;
+  /* make the menu float above the BLOG li, not below it */
+  bottom: 1em;
+  /* make the menu float to the right of the BLOG li, not to the left */
+  right: auto;
+}
+.footer .drop-menu:before {
+  /* make the menu arrow point down, not up as in the header */
+  border-color: #fff transparent transparent;
+  /* the menu arrow should hover on the left side */
+  left: 1em;
+  /* make the menu arrow float from the bottom, not the top */
+  top: auto;
+  /* make the menu arrow stick to the bottom of the footer drop-menu */
+  bottom: 0;
+}
+
+
 /* COLUMN STYLES */
 .col-three {
   display: flex;
