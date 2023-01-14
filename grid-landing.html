@@ -25,7 +25,7 @@
         text-align: center;
       }
     
-    .feature {
+    /* .feature {
       min-height: 70vh;
     }
     .feature_img {
@@ -48,7 +48,28 @@
     .feature_content-2 {
         align-self: end;
         grid-column: 5 / 8;
-    }
+    } */
+
+    .feature {
+    grid-template-rows: 4em 1fr 4em;
+    min-height: 70vh;
+  }
+  .feature_img {
+    background-image: url('/images/shark.jpg');
+    background-size: cover;
+    grid-column: 1 / 9;
+    grid-row: 1 / 4;
+  }
+  .feature_content {
+    background-color: #183a53;
+    color: #fff;
+    grid-row-start: 2;
+    padding: 2em 2em;
+  }
+  .feature_content_2{
+    justify-self: center;
+    justify-self: center;
+  }
 
     .grid {
         box-sizing: border-box;
